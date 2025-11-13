@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<link rel="stylesheet" href="style.css">
+
+	 <title> stranka 2 </title> 
+</head>
+
+<body>
+	<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scroll Reveal — CSS only</title>
+<style>
+  :root {
+    --accent1: #7c3aed;
+    --accent2: #06b6d4;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #0f1724 0%, #1a1a2e 100%);
+    color: #e6eef8;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    scroll-snap-align: start;
+  }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  h1, p {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 1s forwards;
+  }
+
+  section:nth-child(1) h1 { animation-delay: 0.2s; }
+  section:nth-child(1) p  { animation-delay: 0.4s; }
+  section:nth-child(2) h1 { animation-delay: 0.2s; }
+  section:nth-child(2) p  { animation-delay: 0.4s; }
+  section:nth-child(3) h1 { animation-delay: 0.2s; }
+  section:nth-child(3) p  { animation-delay: 0.4s; }
+
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+<section>
+  <h1>Volejbal</h1>
+  <p>Sport ktery me bavi</p>
+  <img class="mimg" style="color: rgb(180, 163, 23);" height="825" width="1115" src="https://th.bing.com/th/id/OIP.wBMupqdnPOk04I8vMyH6ygAAAA?w=223&amp;h=165&amp;c=7&amp;r=0&amp;o=7&amp;cb=ucfimg2&amp;pid=1.7&amp;rm=3&amp;ucfimg=1" alt="Nalezený obrázek pro volejbal image above net spike " data-thhnrepbd="1" data-bm="161">
+</section>
+
+<section>
+  <h1>Jak jsem se k nemu dostal?</h1>
+  <p>Videj jsem to jako maly kluk v televizi. A proto jsem se rozhodl ho zacit delat. Vypadalo to zabavne!!!!</p>
+  <img class="mimg" style="color: rgb(8, 92, 78);" height="935" width="1665" src="https://th.bing.com/th/id/OIP.Gr7cbqeW91ZNr-I4Q6iYFgHaEK?w=333&amp;h=187&amp;c=7&amp;r=0&amp;o=7&amp;cb=ucfimg2&amp;pid=1.7&amp;rm=3&amp;ucfimg=1" alt="Nalezený obrázek pro beach volleyball cup ostrava" data-thhnrepbd="1" data-bm="158">
+</section>
+
+<section>
+  <h1>Jak jsem na tom doted?</h1>
+  <p>Hraji to jiz 2 roky, za tu dobu jsem se nesmirne zlepsil jak ve fyzicce, tak v technice.
+  	Jestli se chcces dozvedet oficialni pravidla volejbalu, tak klikni na <a href="https://www.cvf.cz/rs2/mm/obr/clanky/028/578/Pravidla_volejbalu_2025-2028_text.pdf" target="_blank">pravidla</p>
+  	</a><p>Jestli se chces dozvedet o osobnostech ktere za me dominuji kurt tak klikni na <a href="stranka.html">osobnosti</a>
+</a></p>
+</section>
+
+</body>
+</html>
