@@ -1,0 +1,58 @@
+/* === Scroll reveal CSS-only === */
+
+:root {
+  --accent1: #7c3aed;
+  --accent2: #06b6d4;
+}
+
+body {
+  margin: 0;
+    font-family: 'RoyaltyFree', sans-serif;
+  font-size: 100px;
+  background: linear-gradient(180deg, #071126 0%, #0f1724 100%);
+  color: #e6eef8;
+  line-height: 1.5;
+}
+@font-face {
+
+  font-family: 'RoyaltyFree';
+
+  src: url('fonts/Royalty_Free.ttf') format('truetype');
+
+}
+/* Container pro scroll efekty */
+.reveal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* Prvky, které se mají objevovat */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: revealAnim 1s forwards;
+}
+
+/* Delay pro různé prvky */
+.reveal:nth-child(1) { animation-delay: 0.2s; }
+.reveal:nth-child(2) { animation-delay: 0.4s; }
+.reveal:nth-child(3) { animation-delay: 0.6s; }
+
+/* Keyframes animace */
+@keyframes revealAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll snap pro hladký scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.reveal-container > * {
+  scroll-snap-align: start;
+}
